@@ -1,0 +1,46 @@
+/* Main Container */
+.outbreak-zones-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Map Styling */
+  .map-container {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #07a794;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Popup Content */
+  .popup-content {
+    text-align: center;
+  }
+  
+  .popup-content h3 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  
+  .popup-content p {
+    margin: 3px 0;
+    font-size: 14px;
+  }
+  
+  /* Risk Level Colors */
+  .risk-high {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .risk-medium {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .risk-low {
+    color: green;
+    font-weight: bold;
+  }
+  

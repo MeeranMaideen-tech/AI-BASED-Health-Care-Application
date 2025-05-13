@@ -1,0 +1,30 @@
+.virus-card {
+    background-color: #ffffff; /* Tailwind white */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Tailwind shadow-md */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    
+  }
+  
+  .virus-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .virus-name {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #1d4ed8; /* Tailwind blue-600 */
+    margin-bottom: 8px;
+  }
+  
+  .virus-description {
+    font-size: 1rem;
+    color: #374151; /* Tailwind gray-700 */
+    margin-bottom: 12px;
+  }
+  

@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(8px); /* Slight blur for a calm look */
+}
+
+.chatbot-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  max-width: 600px;
+  width: 100%;
+  margin: 40px auto;
+  backdrop-filter: blur(5px); /* Add blur to the container itself */
+  background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+
+  
+
+
+}
+
+.chatbox {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.chat-message {
+  margin-bottom: 12px;
+}
+
+.chat-question {
+  margin-bottom: 8px;
+}
+
+.response-button {
+  background-color: #34d399; /* Tailwind green-400 */
+  color: white;
+  padding: 12px 24px;
+  margin: 6px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.response-button:hover {
+  background-color: #059669; /* Tailwind green-600 */
+  transform: scale(1.05);
+}
+
+.send-button {
+  background-color: #6366f1; /* Tailwind indigo-500 */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.send-button:hover {
+  background-color: #4f46e5; /* Tailwind indigo-600 */
+  transform: scale(1.05);
+}

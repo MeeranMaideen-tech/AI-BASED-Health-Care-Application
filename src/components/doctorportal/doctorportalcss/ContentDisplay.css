@@ -1,0 +1,18 @@
+/* Display the content on the right side */
+.content-display {
+    padding: 20px;
+    margin-left: 200px; /* Adjust space to make room for the left-side content */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    min-height: 300px;
+    border-radius:10px;
+    border-color: blue
+    
+    
+  }
+  
+  .content-display p {
+    font-size: 18px;
+    color: #333;
+  }
+  

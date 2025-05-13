@@ -1,0 +1,59 @@
+.inpatient-container {
+    padding: 20px;
+  }
+  
+  .patient-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .patient-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 150px;
+  }
+  
+  .patient-card:hover {
+    background: #f0f0f0;
+  }
+  
+  .patient-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .patient-details {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    text-align: center;
+  }
+  
+  .patient-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .patient-details button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .patient-details button:hover {
+    background: darkred;
+  }
+  

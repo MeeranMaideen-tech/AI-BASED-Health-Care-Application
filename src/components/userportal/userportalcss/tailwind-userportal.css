@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom User Portal Styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,17 @@
+.user-portal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f3f4f6; /* Tailwind gray-100 */
+    min-height: 100vh;
+  }
+  
+  .user-portal-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937; /* Tailwind gray-800 */
+    margin-bottom: 20px;
+  }
+  

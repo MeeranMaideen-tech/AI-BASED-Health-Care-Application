@@ -1,0 +1,41 @@
+/* Basic Styles for Hamburger Button */
+.hamburger-button {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Slide-in menu */
+.slide-menu {
+  position: fixed;
+  top: 60px;  /* Adjust for topmenu height */
+  right: -250px;  /* Initially hide the menu outside the screen */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  padding-top: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 5;
+}
+
+/* Slide the menu in */
+.slide-menu.open {
+  right: 0;
+}
+
+.slide-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slide-menu ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.slide-menu ul li:hover {
+  background-color: #444;
+}

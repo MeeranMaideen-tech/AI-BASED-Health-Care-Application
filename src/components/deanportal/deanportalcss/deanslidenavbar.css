@@ -1,0 +1,90 @@
+:root {
+    --sidebar-width: 250px;
+  }
+  
+  /* Sidebar Container */
+  .Dean-slide-navbar {
+    position: fixed;
+    top: 60px;                /* sit just under your top-menu */
+    left: -250px;             /* hidden by default */
+    width: var(--sidebar-width);
+    height: calc(100% - 60px);
+    background-color: #064789;
+    color: white;
+    padding-top: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+    overflow-y: auto;
+  }
+  
+  /* Sidebar Opens */
+  .Dean-slide-navbar.open {
+    left: 0;
+  }
+  
+  /* Shift AI Alerts over when sidebar opens */
+  .Dean-slide-navbar.open ~ main .Dean-ai-alerts-container {
+    margin-left: var(--sidebar-width);
+  }
+  
+  /* Profile Section */
+  .profile-container {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .profile-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  
+  .dean-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Sidebar Navigation */
+  .nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-links ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .nav-links ul li:hover {
+    background-color: #444;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    background: #05ab8c;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .close-btn:hover {
+    background: #bb0c0c;
+  }
+  
+  /* Dark Mode Support */
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  

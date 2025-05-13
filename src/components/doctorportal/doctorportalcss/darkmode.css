@@ -1,0 +1,14 @@
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  

@@ -1,0 +1,45 @@
+.notification-container {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    
+  }
+  
+  .notification-icon {
+    cursor: pointer;
+    /* top: 10px; Adjust as per your design */
+    /* right: 10px; Positioned to the right */
+    justify-content: center;
+  }
+  
+  .notification-icon img {
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+  }
+  
+  .notification-messages {
+    position: absolute;
+    top: 40px; /* Adjust based on your design */
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
+  .notification-messages p {
+    font-weight: bold;
+  }
+  
+  .notification-messages ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notification-messages ul li {
+    padding: 5px 0;
+  }
+  

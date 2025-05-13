@@ -1,0 +1,60 @@
+/* Ensures Sidebar & Main Content Stay Aligned */
+.mainpage-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Default full width */
+  min-height: 100vh;
+  transition: grid-template-columns 0.3s ease-in-out;
+  justify-content: center; /* Ensures the content stays centered */
+}
+
+/* Adjusts Layout When Sidebar is Open */
+.mainpage-grid.sidebar-open {
+  grid-template-columns: 250px 1fr; /* Sidebar + Main Content */
+}
+
+/* Sidebar Styling */
+.deanslidenavbar {
+  width: 250px;
+  transition: width 0.3s ease-in-out;
+}
+
+.deanslidenavbar.closed {
+  width: 0;
+  overflow: hidden;
+}
+
+/* Ensure Main Content Stays Centered 
+.Dean-content-display-div {
+  width: 100%;
+   max-width: 75%;  /*Set max width to keep it centered
+  /* margin: 0 auto;  Centers the content 
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  padding: 20px;
+}*/
+
+/* When Sidebar is Open, Content Should Not Shift */
+.mainpage-grid.sidebar-open .Dean-content-display {
+  margin: 0 auto; /* Keeps it centered */
+}
+/* in src/components/deanportal/deanportalcss/deanportal.css */
+
+/* collapse sidebar column when full-screen flag is set */
+.mainpage-grid.full-screen {
+  grid-template-columns: 0 1fr !important;
+}
+
+/* hide the sidebar component */
+.dean-portal.full-screen .Deanslidenavbar {
+  display: none !important;
+}
+
+/* stretch the content area to fill */
+.mainpage-grid.full-screen .Dean-content-display-div {
+  grid-column: 2;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+

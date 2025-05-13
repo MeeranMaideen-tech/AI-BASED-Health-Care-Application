@@ -1,0 +1,52 @@
+/* Main Container */
+.Dean-ai-alerts-container {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;                        /* start flush */
+    transition: margin-left 0.3s ease-in-out;
+  }
+  .Dean-ai-alerts-container-cus{
+    position: relative;
+  }
+  
+  /* AI Alert Table */
+  .Dean-ai-alert-table {
+    width: 100% !important;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 60px;
+  }
+  
+  .Dean-ai-alert-table th,
+  .Dean-ai-alert-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Dean-ai-alert-table th {
+    background-color: #05668d; /* Updated color for Dean Portal */
+    color: white;
+  }
+  
+  .risk-high {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .risk-medium {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .risk-low {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .no-data {
+    padding: 20px;
+    font-style: italic;
+  }
+  

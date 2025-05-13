@@ -1,0 +1,37 @@
+.Dean-content-display {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 75%;
+  height: auto;
+  min-height: 80vh; /* Increased height*/
+  margin: auto;
+  position: absolute;
+  top: 50%;  /* Adjusted */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  word-wrap: break-word;
+  background-color: rgb(235, 236, 237);
+  /* overflow: hidden; Prevent map collapsing */
+}
+
+/* Map specific styles */
+.map-container {
+  width: 100% !important; 
+  height: 70vh !important;  /* Ensuring full height */
+  min-height: 400px; /* Avoids collapsing*/
+  border-radius: 8px;
+}
+
+  
+  .content-display p {
+    font-size: 18px;
+    color: #333;
+  
+  }
+  

@@ -1,0 +1,104 @@
+/* 🟢 Top Menu Container */
+.topmenud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #064789;
+  border-bottom: 2px solid #09ad9a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 50; /* Higher than slide menu */
+  height: 60px; /* Ensure a fixed height */
+  transition: background 0.3s ease-in-out;
+}
+
+/* 🟢 Prevent Content Overlapping */
+body {
+  padding-top: 60px; /* Push content down to avoid overlap */
+}
+
+/* 🟢 Dark Mode Support */
+body.dark-mode .topmenud {
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #ff4d4d;
+}
+
+/* 🟢 Left Section (Logo + Hamburger) */
+.topmenu-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 🟢 Hamburger Menu Button */
+.hamburger-button {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.hamburger-button:hover {
+  color: #0dddcf;
+}
+
+/* Dark Mode */
+body.dark-mode .hamburger-button {
+  color: #e9e7e2;
+}
+
+/* 🟢 Middle Section (Search Bar) */
+.topmenu-middle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* 🟢 Right Section (Notifications + Dark Mode Toggle) */
+.topmenu-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 🟢 Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  color: #e6e5e2;
+}
+
+/* Dark Mode */
+body.dark-mode .dark-mode-toggle {
+  color: #fafaf8;
+}
+
+/* 🟢 Responsive Adjustments */
+@media (max-width: 768px) {
+  .topmenud {
+      padding: 10px;
+  }
+
+  .topmenu-left {
+      gap: 10px;
+  }
+
+  .topmenu-middle {
+      display: none; /* Hide search bar on small screens */
+  }
+
+  .topmenu-right {
+      gap: 10px;
+  }
+}

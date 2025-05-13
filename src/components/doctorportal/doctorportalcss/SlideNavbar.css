@@ -1,0 +1,74 @@
+.slide-navbar {
+  position: fixed;
+  top: 60px; /* Adjust based on Topmenu height */
+  left: -250px;
+  width: 250px;
+  height: calc(100% - 60px);
+  background-color: #628db8;
+  color: white;
+  padding-top: 20px;
+  transition: left 0.3s ease-in-out;
+  z-index: 40;
+  
+}
+
+.slide-navbar.open {
+  left: 0;
+}
+
+.profile-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.profile-picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.doctor-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-links ul li:hover {
+  background-color: #444;
+}
+
+.close-btn {
+  background: #05ab8c;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: back-ground 0.3s;
+}
+
+.close-btn:hover {
+  background: #bb0c0c;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
